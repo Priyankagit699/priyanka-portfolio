@@ -1,0 +1,248 @@
+/* GLOBAL */
+body{
+  margin:0;
+  font-family:Poppins, sans-serif;
+  background:#020617;
+  color:white;
+  overflow-x:hidden;
+}
+
+section{
+  padding:100px 10%;
+  text-align:center;
+  scroll-margin-top:90px;
+}
+
+.title{
+  font-size:2.3rem;
+  margin-bottom:40px;
+}
+
+/* NAVBAR */
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 30px;
+  background:rgba(2,6,23,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+  box-sizing:border-box;
+}
+
+.logo{
+  color:#38bdf8;
+  font-size:22px;
+}
+
+/* NAV LINKS */
+.links{
+  display:flex;
+  gap:30px;
+}
+
+.links a{
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+  transition:.3s;
+}
+
+.links a:hover{
+  color:#38bdf8;
+  text-shadow:0 0 10px #38bdf8;
+}
+
+/* HAMBURGER */
+.menuBtn{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:3.5rem;
+  margin-bottom:10px;
+}
+
+.hero h2{
+  color:#38bdf8;
+  text-shadow:0 0 15px #38bdf8;
+  margin-bottom:15px;
+}
+
+.hero p{
+  opacity:.8;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:25px;
+  padding:12px 28px;
+  border-radius:30px;
+  background:#38bdf8;
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover{
+  box-shadow:0 0 25px #38bdf8;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+/* CARDS */
+.card{
+  padding:30px;
+  border-radius:15px;
+  background:#0f172a;
+  transition:.3s;
+  border:1px solid transparent;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border:1px solid #38bdf8;
+  box-shadow:0 0 25px #38bdf8;
+}
+
+.project h3{
+  color:#38bdf8;
+}
+
+/* TECH TEXT */
+.tech{
+  display:block;
+  margin:15px 0;
+  color:#38bdf8;
+  font-size:14px;
+}
+
+/* GITHUB BUTTON */
+.githubBtn{
+  display:inline-block;
+  padding:10px 22px;
+  border-radius:25px;
+  text-decoration:none;
+  color:white;
+  border:1px solid #38bdf8;
+  transition:.3s;
+}
+
+.githubBtn:hover{
+  background:#38bdf8;
+  color:black;
+  box-shadow:0 0 15px #38bdf8;
+}
+
+/* CONTACT */
+.contact{
+  padding:70px 10%;
+}
+
+.contactBox{
+  margin-top:20px;
+  background:#0f172a;
+  padding:30px;
+  border-radius:15px;
+  display:inline-block;
+  border:1px solid transparent;
+  transition:.3s;
+}
+
+.contactBox:hover{
+  border:1px solid #38bdf8;
+  box-shadow:0 0 20px #38bdf8;
+}
+
+.contact p{
+  margin:12px 0;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .title{
+    font-size:1.9rem;
+  }
+
+  /* hamburger visible */
+  .menuBtn{
+    display:block;
+  }
+
+  /* mobile menu */
+  .links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#020617;
+    flex-direction:column;
+    width:200px;
+    padding:25px;
+    gap:25px;
+    transform:translateX(100%);
+    transition:.4s;
+  }
+
+  .links.show{
+    transform:translateX(0);
+  }
+}
+
+.githubMainBtn{
+  display:inline-block;
+  margin:20px 0;
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  background:#38bdf8;
+  color:black;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.githubMainBtn:hover{
+  box-shadow:0 0 25px #38bdf8;
+  transform:scale(1.05);
+}
+
+.resumeBtn{
+  padding:8px 18px;
+  border-radius:25px;
+  background:#38bdf8;
+  color:black !important;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.resumeBtn:hover{
+  box-shadow:0 0 15px #38bdf8;
+  transform:scale(1.05);
+}
